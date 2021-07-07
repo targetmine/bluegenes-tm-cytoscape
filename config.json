@@ -1,0 +1,13 @@
+{
+  "accepts": ["id"],
+  "classes": ["Gene","Protein"],
+  "files" : {
+    "css" : "dist/style.css",
+    "js" : "dist/bundle.js"
+  },
+  "toolName" : {
+    "human" :"Cytoscape Interaction Network",
+    "cljs" :"bluegenesTmCytoscape"    
+  },
+  "version": 2
+}
