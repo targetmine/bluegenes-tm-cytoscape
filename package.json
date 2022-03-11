@@ -6,7 +6,7 @@
   "homepage": "http://www.intermine.org",
   "repository": {
     "type": "git",
-    "url": "git@github.com:chenyian-nibio/bluegenes-tm-cytoscape.git"
+    "url": "git@github.com:targetmine/bluegenes-tm-cytoscape.git"
   },
   "files": [
     "/dist",
