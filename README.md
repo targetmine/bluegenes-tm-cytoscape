@@ -1,10 +1,12 @@
 #  Cytoscape Interaction Network
 
 Cytoscape Interaction Network is a tool made for [BlueGenes](http://bluegenes.apps.intermine.org) following BlueGenes Tool API.
-Add more description of your tool here! :)
 
-## Licence
+This BlueGenes tool combines [intermine/cytoscape-intermine](https://github.com/intermine/cytoscape-intermine) and [intermine/bluegenes-tool-cytoscape](https://github.com/intermine/bluegenes-tool-cytoscape) into a single project. The query for the interaction data was tweaked to fit the old interaction model. (insted of participant2, the interacting entity is gene2.)
 
+## License
+
+The MIT License - see [LICENSE](LICENSE)
 
 ### To set up locally for development
 

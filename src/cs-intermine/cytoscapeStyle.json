@@ -1,0 +1,49 @@
+[{
+  "selector": "node",
+  "style": {
+    "content": "data(label)",
+    "border-width": "2px",
+    "background-color": "#dedede",
+    "border-style": "solid",
+    "border-color": "#999"
+  }
+}, {
+  "selector": ":selected",
+  "style": {
+    "text-outline-color": "black",
+    "background-color": "gold",
+    "border-color": "gold",
+    "border-width": "5px",
+    "border-style": "solid"
+  }
+}, {
+  "selector": "edge",
+  "style": {
+    "width": "2px"
+  }
+}, {
+  "selector": "edge[interactionType@^=\"genetic\"]",
+  "style": {
+    "line-color": "#2c79be"
+  }
+}, {
+  "selector": "edge[interactionType@^=\"physical\"]",
+  "style": {
+    "line-color": "#c00"
+  }
+}, {
+  "selector": ".genetic",
+  "style": {
+    "border-color": "#225f95"
+  }
+}, {
+  "selector": ".physical",
+  "style": {
+    "border-color": "#c00"
+  }
+}, {
+  "selector": ".both",
+  "style": {
+    "border-color" : "#77304B"
+  }
+}]

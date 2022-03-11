@@ -1,0 +1,25 @@
+{
+  "user" : {
+    "noResults" : "No interaction results for this query",
+    "tooManyResults" : "This graph is displayed when there are 500 or fewer interactions.",
+    "pleaseClearCache" : "Error loading results. Please clear your cache and try again.",
+    "noQueryData" : "Problem loading query results"
+  },
+  "dev" : {
+    "noParent" : {
+      "usingDefault" : "Cymine: No parent element specified for Cymine. Using default '#cymine",
+      "noDefault" : "Cymine: No parent element specified, and default '#cymine' not available."
+    },
+    "noQueryData" : "Cymine: No queryOn values supplied!",
+    "noServiceUrl" : "Cymine: No serviceUrl defined, unable to query for interactions.",
+    "badServiceUrl" : "Cymine: bad serviceUrl. Please check for typos and check this host is up."
+  },
+  "showTable" : {
+    "showInTableFormat" : "Show in table format",
+    "hideTableFormat" : "Hide table"
+  },
+  "CONST" : {
+    "PROTEIN" : "Protein",
+    "LOOKUP_PROTEIN" : "proteins"
+  }
+}

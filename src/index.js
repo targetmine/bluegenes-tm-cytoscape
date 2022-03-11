@@ -1,32 +1,31 @@
-// add any imports if needed, or write your script directly in this file.
-// const SomePackage = require('PackageName');
+const Cymine = require('./cs-intermine/slim');
 
 // make sure to export main, with the signature
-function main(el, service, imEntity, state, config, navigate) {
+function main(el, service, imEntity, state, config) {
 	if (!state) state = {};
 	if (!el || !service || !imEntity || !state || !config) {
 		throw new Error('Call main with correct signature');
 	}
-	// Tips to ensure your tool works correctly in BlueGenes:
-	// - The `el` element is all yours, but please do not manipulate the DOM above this
-	// - Avoid ambiguous query selectors that may end up returning an element not belonging to this tool
-	// - Avoid relying on element IDs, as multiple instances of this tool may be present on one page
 
-	/* Example - you can delete this and replace with your own code *******
+	var entity = imEntity.Gene || imEntity.Protein;
 
-		// Sample code here to convert the provided InterMine object ID into the data the tool needs.
-		var entity = imEntity.Gene;
-		var mine = new imjs.Service(service);
-		mine.findById(entity.class, entity.value).then(function(obj) {
-			console.log(obj.name + ' is a ' + obj.class + ' you can find in ' + obj.organism.name);
-		});
-	*/
+	var innerElem = document.createElement('div');
+	el.appendChild(innerElem);
 
-	el.innerHTML = `
-		<div class="rootContainer">
-			<h1>Your Data Viz Here</h1>
-		</div>
-	`;
+	var paths = { Gene: 'Gene.id', Protein: 'Gene.proteins.id' };
+	var initOptions = {
+		parentElem: innerElem,
+		service: service,
+		queryOn: {
+			value: entity.value,
+			op: '=',
+			path: paths[entity.class]
+		},
+		nodeType: entity.class,
+		compact: true //optional
+	};
+
+	Cymine(initOptions);
 }
 
 module.exports = { main };
